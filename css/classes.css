@@ -1,0 +1,46 @@
+.vertical-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.colored-background {
+  background-image: linear-gradient(
+    /* to bottom, */ rgb(221, 75, 37),
+    rgb(0, 109, 180),
+    rgb(236, 197, 11)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  background-position: center center;
+}
+
+.dark-theme {
+  /* .dark-theme:root */
+  --_color: #fafafa;
+  --__color: #ecf0f1;
+  --_background-color: #343a40;
+  --__background-color: #212529;
+  --_background-menu: #2c3035;
+  --_background-highlights: #303235;
+ --__background-highlights: #34373a;
+ --_border-color: #4f5860;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--_background-menu);
+  opacity: 0.8;
+  z-index: 3;
+}
+
+.website-name {
+  text-transform: capitalize;
+}
